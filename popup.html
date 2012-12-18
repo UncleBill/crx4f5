@@ -14,10 +14,23 @@
                 height:10px !important;
                 -webkit-transition:all .5s;
             }
+            #setting{
+                float:left;
+            }
+            form{
+                margin:0px;
+            }
         </style>
-        <script src="loader.js"></script>
+        <script src="scripts/jquery.min.js"></script>
     </head>
     <body>
-        <iframe src="http://localhost:3000" frameborder="0" width="400"></iframe>
+        <a href="#" id="setting">setting</a>
+        <form id="portSetting" style="display:none">
+            <!--<label for="port">port:</label>-->
+            <input id='port' type="text" placeholder="port" />
+            <input id='btn' type="submit" />
+        </form>
+        <iframe id='tree_con' src="http://localhost:3000" frameborder="0" width="400"></iframe>
+        <script src='scripts/renamesrc.js'></script>
     </body>
 </html>

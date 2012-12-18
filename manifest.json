@@ -10,13 +10,10 @@
     },
     "options_page": "settings.html",
     "permissions": [
-        "tabs",
-        "http://localhost:*/*"
     ],
-   "content_security_policy":"script-src 'self' 'unsafe-eval'; object-src 'self'",
     "browser_action": {
         "default_icon":"icons/icon48.png",
         "default_popup": "popup.html"
     },
-    "web_accessible_resources":["loader.js"]
+    "web_accessible_resources":["script/jquery.min.js","scripts/resource.js"]
 }
